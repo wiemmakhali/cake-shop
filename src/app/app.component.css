@@ -1,0 +1,35 @@
+.navbar {
+    background: linear-gradient(to right, #ea27b3, #6A0DAD); /* Dégradé de violet */
+  }
+  
+  .navbar-brand {
+    color: white; /* Couleur du texte de la marque */
+    font-size: 1.5rem; /* Taille de la police de la marque */
+  }
+  
+  .navbar-nav .nav-item a {
+    color: white; /* Couleur du texte des liens de navigation */
+    font-size: 1rem; /* Taille de la police des liens de navigation */
+    padding: 0.5rem 1rem; /* Espacement autour des liens */
+    text-transform: uppercase; /* Convertir le texte en majuscules */
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    background-color: #8E27EA; /* Couleur violette plus foncée au survol des liens */
+  }
+  
+  .form-control {
+    width: 300px; /* Largeur du champ de recherche */
+  }
+  .btn-outline-success {
+    color: #fff;
+    border-color: #28a745;
+    background-color: #28a745;
+  }
+  
+  .footer {
+    background-color: #6A0DAD; /* Couleur violette pour le pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 1rem 0; /* Espacement du haut et bas du pied de page */
+  }

@@ -1,0 +1,89 @@
+.tableau-de-bord {
+    display: flex;
+    flex-direction: row; /* Assurez-vous que les éléments sont alignés horizontalement */
+ position: relative;}
+
+.navbar {
+    width: 100%;
+    background: #c938a0;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assure que la navbar est au-dessus des autres éléments */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments de la navbar */
+    align-items: center; /* Alignement vertical des éléments de la navbar */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* sidebar */
+.sidebar {
+    width: 200px; /* Ajustez la largeur si nécessaire */
+    background: #c938a0; /* Couleur de fond de la sidebar */
+    color: white; /* Couleur du texte dans la sidebar */
+    padding: 20px;
+    position: fixed;
+    top: 60px; /* Assurez-vous que la sidebar commence après la navbar */
+    bottom: 0; /* Faites en sorte que la sidebar prenne toute la hauteur restante */
+    left: 0;
+    overflow-y: auto; /* Ajoutez un défilement si le contenu dépasse la hauteur de la sidebar */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fond noir semi-transparent au survol */
+}
+
+.container {
+    margin-top: 60px; /* Espace en haut pour la navbar */
+    margin-left: 220px; /* Espace sur le côté pour la sidebar */
+    padding: 20px;
+    flex: 1; /* Assurez-vous que le conteneur prend l'espace restant */
+}
+
+.content {
+    padding: 20px;
+    background: white; /* Ajoutez une couleur de fond pour la clarté */
+    min-height: 100vh; /* Assurez que le contenu prend au moins toute la hauteur de la fenêtre */
+    box-sizing: border-box; /* Inclure le padding et les bordures dans la taille totale */
+}
