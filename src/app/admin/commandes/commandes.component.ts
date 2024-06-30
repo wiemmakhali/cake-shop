@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./commandes.component.css']
 })
 export class CommandesComponent {
-
+  deleteOrder(id: number) {
+    // Logique de suppression de la commande avec l'ID donné
+    console.log('Supprimer la commande avec l\'ID : ', id);
+  }
 }

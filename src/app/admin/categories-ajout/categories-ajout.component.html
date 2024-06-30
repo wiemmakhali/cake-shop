@@ -1,0 +1,17 @@
+<p>categories-ajout works!</p>
+<div class="categories">
+    <h2>Gestion des Catégories</h2>
+    <form (ngSubmit)="onSubmit()" #categoryForm="ngForm">
+      <div>
+        <label for="name">Nom de la Catégorie:</label>
+        <input type="text" id="name" name="name" ngModel required>
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" ngModel>
+      </div>
+      <button type="submit" [disabled]="!categoryForm.form.valid">Ajouter Catégorie</button>
+    </form>
+  </div>
+  <!-- home.component.html -->
+<button routerLink="/">Retour à la page d'accueil</button>

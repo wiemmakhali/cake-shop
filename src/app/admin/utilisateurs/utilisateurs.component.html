@@ -1,5 +1,39 @@
-<div class="utilisateurs">
-    <h2>Gestion des Utilisateurs</h2>
-    <!-- Ajoutez ici le contenu pour gérer les utilisateurs -->
-  </div>
-  
+<!-- Utilisateurs.component.html -->
+<h1>Liste des utilisateurs</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Email</th>
+      <th>Action</th> <!-- Colonne des boutons pour modifier et supprimer -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Alice</td>
+      <td>Johnson</td>
+      <td>alice@example.com</td>
+      <td>
+        <button (click)="editUser(1)">Modifier</button>
+        <button (click)="deleteUser(1)">Supprimer</button>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Bob</td>
+      <td>Smith</td>
+      <td>bob@example.com</td>
+      <td>
+        <button (click)="editUser(2)">Modifier</button>
+        <button (click)="deleteUser(2)">Supprimer</button>
+      </td>
+    </tr>
+    <!-- Ajouter d'autres lignes d'utilisateurs ici -->
+  </tbody>
+</table>
+<button routerLink="/">Retour à la page d'accueil</button>
+<!-- home.component.html -->
+<button routerLink="/">Retour à la page d'accueil</button>

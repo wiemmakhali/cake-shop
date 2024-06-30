@@ -2,12 +2,15 @@
   <div class="sidebar">
       <ul>
           <li><a routerLink="utilisateurs">Utilisateurs</a></li>
+          <li><a routerLink="utilisateurs-ajout"> Ajouter Utilisateur</a></li>
           <li><a routerLink="produits">Produits</a></li>
-          <li><a routerLink="categories">Catégories</a></li>
+          <li><a routerLink="produits-ajout"> Ajouter Produits</a></li>
+          <li><a routerLink="categories"> Liste des Catégories</a></li>
+          <li><a routerLink="categories-ajout"> Ajouter Catégorie</a></li>
           <li><a routerLink="commandes">Commandes</a></li>
       </ul>
   </div>
-  <div class="content">
-      <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </div>
+<!-- home.component.html -->
+<button routerLink="/">Retour à la page d'accueil</button>

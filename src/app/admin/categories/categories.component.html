@@ -1,5 +1,29 @@
-<div class="categories">
-    <h2>Gestion des Catégories</h2>
-    <!-- Ajoutez ici le contenu pour gérer les catégories -->
-  </div>
-  
+<h1>Liste des Catégories</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom Catégorie</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dessert</td>
+      <td><button onclick="deleteCategory(1)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Gâteaux</td>
+      <td><button onclick="deleteCategory(2)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Pâtisseries</td>
+      <td><button onclick="deleteCategory(3)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+<!-- home.component.html -->
+<button routerLink="/">Retour à la page d'accueil</button>

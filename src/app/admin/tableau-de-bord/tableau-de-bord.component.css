@@ -44,7 +44,7 @@
     background: #c938a0; /* Couleur de fond de la sidebar */
     color: white; /* Couleur du texte dans la sidebar */
     padding: 20px;
-    position: fixed;
+  /*   position: fixed; */
     top: 60px; /* Assurez-vous que la sidebar commence après la navbar */
     bottom: 0; /* Faites en sorte que la sidebar prenne toute la hauteur restante */
     left: 0;
@@ -81,9 +81,4 @@
     flex: 1; /* Assurez-vous que le conteneur prend l'espace restant */
 }
 
-.content {
-    padding: 20px;
-    background: white; /* Ajoutez une couleur de fond pour la clarté */
-    min-height: 100vh; /* Assurez que le contenu prend au moins toute la hauteur de la fenêtre */
-    box-sizing: border-box; /* Inclure le padding et les bordures dans la taille totale */
-}
+

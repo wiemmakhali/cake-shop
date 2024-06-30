@@ -1,5 +1,81 @@
-<div class="produits">
-    <h2>Gestion des Produits</h2>
-    <!-- Ajoutez ici le contenu pour gérer les produits -->
-  </div>
-  
+<h1>Liste des Produits</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom Produit</th>
+      <th>Catégorie</th>
+      <th>Description</th>
+      <th>Taille</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Gateau au chocolat</td>
+      <td>Dessert</td>
+      <td>Délicieux gateau au chocolat fondant</td>
+      <td>M</td>
+      <td><button onclick="deleteProduct(1)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Tarte aux fruits</td>
+      <td>Dessert</td>
+      <td>Tarte fraiche aux fruits de saison</td>
+      <td>L</td>
+      <td><button onclick="deleteProduct(2)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Gateau aux amandes</td>
+      <td>Dessert</td>
+      <td>Gateau moelleux aux amandes effilées</td>
+      <td>M</td>
+      <td><button onclick="deleteProduct(3)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Cupcake aux framboises</td>
+      <td>Dessert</td>
+      <td>Petits cupcakes garnis de framboises fraiches</td>
+      <td></td>
+      <td><button onclick="deleteProduct(4)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Eclair au café</td>
+      <td>Dessert</td>
+      <td>Eclair fourré une crème au café</td>
+      <td>L</td>
+      <td><button onclick="deleteProduct(5)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Millefeuille vanille</td>
+      <td>Dessert</td>
+      <td>Millefeuille vanille croustillant et fondant</td>
+      <td>XL</td>
+      <td><button onclick="deleteProduct(6)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Cheesecake aux fruits rouges</td>
+      <td>Dessert</td>
+      <td>Cheesecake aux fruits rouges et biscuit sablé</td>
+      <td>L</td>
+      <td><button onclick="deleteProduct(7)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Moelleux au citron</td>
+      <td>Dessert</td>
+      <td>Gateau moelleux au citron et sa chantilly acidulée</td>
+      <td>M</td>
+      <td><button onclick="deleteProduct(8)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+<!-- home.component.html -->
+<button routerLink="/">Retour à la page d'accueil</button>

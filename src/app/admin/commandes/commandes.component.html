@@ -1,5 +1,33 @@
-<div class="commandes">
-    <h2>Gestion des Commandes</h2>
-    <!-- Ajoutez ici le contenu pour gérer les commandes -->
-  </div>
-  
+<h1>Liste des Commandes</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>Client</th>
+      <th>Total</th>
+      <th>Statut</th>
+      <th>Action</th> <!-- Colonne action pour supprimer la commande -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2022-09-15</td>
+      <td>John Doe</td>
+      <td>50.00</td>
+      <td>
+        <select>
+          <option value="en_cours">En cours</option>
+          <option value="livre">Livré</option>
+          <option value="en_attente">En attente</option>
+        </select>
+      </td>
+      <td><button (click)="deleteOrder(1)">Delete</button></td>
+    </tr>
+    <tr>
+      <!-- Ajouter les autres lignes avec dropdown pour chaque commande -->
+    </tr>
+  </tbody>
+</table>
+<button routerLink="/">Retour à la page d'accueil</button>
